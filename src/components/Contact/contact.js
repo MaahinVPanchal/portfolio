@@ -8,7 +8,7 @@ import FacebookIcon from "../../assets/facebook-icon.png";
 import TwitterIcon from "../../assets/twitter.png";
 import YoutubeIcon from "../../assets/youtube.png";
 import InstagramIcon from "../../assets/instagram.png";
-import emailjs from "@emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
