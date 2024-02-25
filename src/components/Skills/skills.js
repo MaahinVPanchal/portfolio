@@ -1,8 +1,8 @@
 import React from "react";
 import "./skills.css";
-import UIDesign from "../../assets/ui-design.png";
-import WebDesign from "../../assets/website-design.png";
-import AppDesign from "../../assets/app-design.png";
+import Python from "../../assets/python.png";
+import WebDesign from "../../assets/htmlcssjs.png";
+import Reactjs from "../../assets/reactjs.png";
 
 const Skills = () => {
   return (
@@ -15,10 +15,10 @@ const Skills = () => {
       </span>
       <div className="skillBars">
         <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
+          <img src={Python} alt="Python" className="skillBarImg" />
           <div className="skillBarText">
-            <h2>UI/UX Design</h2>
-            <p>This is a demo text, you can write your own content here</p>
+            <h2>Python</h2>
+            <p>I had learn python and make some project.</p>
           </div>
         </div>
       </div>
@@ -27,19 +27,16 @@ const Skills = () => {
           <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Website Design</h2>
-            <p>
-              This demo text can be changes while making the production ready
-              website
-            </p>
+            <p>I had made simple webpage through html,css,js.</p>
           </div>
         </div>
       </div>
       <div className="skillBars">
         <div className="skillBar">
-          <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
+          <img src={Reactjs} alt="Reactjs" className="skillBarImg" />
           <div className="skillBarText">
-            <h2>App Design</h2>
-            <p>This demo text can be changes while making the app ready</p>
+            <h2>Reactjs</h2>
+            <p>I had prior knowledge based on reactjs.</p>
           </div>
         </div>
       </div>
