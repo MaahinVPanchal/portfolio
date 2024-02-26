@@ -24,18 +24,18 @@
 }
 
 .worksImgs {
-  display: flex;
+  display: flexbox;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100vw;
-  max-width: 70rem;
+  width: 70vw;
+  max-width: 80rem;
 }
 
 .worksImg {
   object-fit: cover;
-  height: 20rem;
-  margin: 0.5rem;
+  height: 10rem;
+  margin: 0.6rem;
 }
 
 .worksBtn {
