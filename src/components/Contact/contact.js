@@ -1,9 +1,5 @@
 import React, { useRef } from "react";
 import "./contact.css";
-import Walmart from "../../assets/walmart.png";
-import Adobe from "../../assets/adobe.png";
-import Microsoft from "../../assets/microsoft.png";
-import Facebook from "../../assets/facebook.png";
 import FacebookIcon from "../../assets/facebook-icon.png";
 import TwitterIcon from "../../assets/twitter.png";
 import YoutubeIcon from "../../assets/youtube.png";
@@ -33,19 +29,6 @@ const Contact = () => {
   };
   return (
     <section id="contactPage">
-      <div id="clients">
-        <h1 className="contactPageTitle">My Clients</h1>
-        <p className="clientDesc">
-          I have had the opportunity to work with a diverse group of companies.
-          Some of the notable companies I have worked with includes.
-        </p>
-        <div className="clientsImgs">
-          <img src={Walmart} alt="Walmart" className="clientsImg" />
-          <img src={Adobe} alt="Adobe" className="clientsImg" />
-          <img src={Microsoft} alt="Microsoft" className="clientsImg" />
-          <img src={Facebook} alt="Facebook" className="clientsImg" />
-        </div>
-      </div>
       <div id="contact">
         <h1 className="contactPageTitle">Contact Me</h1>
         <span className="contactDesc">
@@ -68,7 +51,7 @@ const Contact = () => {
             name="message"
             className="msg"
             rows="5"
-            placeholder="Your Message"
+            placeholder="Your Complain"
           ></textarea>
           <button type="submit" value="Send" className="submitBtn">
             Submit

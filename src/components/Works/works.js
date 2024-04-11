@@ -1,28 +1,54 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./work.css";
 
-import Portfolio7 from "../../assets/portfolio-7.png";
-import Portfolio8 from "../../assets/portfolio-8.png";
-import Portfolio9 from "../../assets/portfolio-9.png";
-import Portfolio10 from "../../assets/portfolio-10.png";
+const slides = [
+  {
+    title: "Rochak",
+    description:
+      "Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy",
+  },
+  {
+    title: "Brad Johns",
+    description:
+      "Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various",
+  },
+  {
+    title: "Morijorch",
+    description:
+      "editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various",
+  },
+];
 
-const Works = () => {
+function Works() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+  };
+
   return (
-    <section id="works">
-      <h2 className="worksTitle">Blockchain As Begineer.</h2>
-      <span className="worksDesc">
-        I am eagerly awaiting to learn and pursue a career in blockchain
-        technology.I am starting with this part.
-      </span>
-      <div className="worksImgs">
-        <img src={Portfolio7} alt="Portfolio7" className="worksImg" />
-        <img src={Portfolio8} alt="Portfolio8" className="worksImg" />
-        <img src={Portfolio9} alt="Portfolio9" className="worksImg" />
-        <img src={Portfolio10} alt="Portfolio10" className="worksImg" />
-      </div>
-      <button className="worksBtn">See more</button>
-    </section>
+    <div id="review">
+      <h1 className="text-title">Reviews</h1>
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div className="slide" key={index}>
+            <div className="text-container">
+              <h2>{slide.title}</h2>
+              <p>{slide.description}</p>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
-};
+}
 
 export default Works;

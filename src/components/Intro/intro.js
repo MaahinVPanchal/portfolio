@@ -1,34 +1,61 @@
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import "./intro.css";
-import bg from "../../assets/image.png";
-import btnImg from "../../assets/hireme.png";
-import { Link } from "react-scroll";
 
-const Intro = () => {
+const images = [
+  require("../../assets/hero_image3.png"),
+  "https://images-eu.ssl-images-amazon.com/images/G/31/img22/march/brands/GW/Under_1499_Tallhero_3000x1200._CB561212093_.jpg",
+  "https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg",
+];
+
+function Intro() {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+  };
+
   return (
-    <section id="intro">
-      <div className="introContent">
-        <span className="hello">Hello,</span>
-        <span className="introtext">
-          I'm <span className="introName">Maahin</span>
-          <br />
-          Blockchain Developer
-        </span>
-        <p className="introPara">
-          Every smart person that I admire in the world, and those I semi-fear,
-          is
-          <br /> focused on this concept of crypto for a reason.
-        </p>
-        <Link>
-          <button className="btn">
-            <img src={btnImg} alt="Hire Me" className="btnImg" />
-            Hire Me
-          </button>
-        </Link>
-      </div>
-      <img src={bg} alt="Profile" className="bg" />
-    </section>
+    <div className="box" id="intro">
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        ssr={true} // means to render carousel on server-side.
+        autoPlay={true}
+        autoPlaySpeed={1000}
+        keyBoardControl={true}
+        customTransition="transform 300ms ease-in-out"
+        transitionDuration={300}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        deviceType={"desktop"}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+        {images.map((URL, index) => (
+          <div className="slide" key={index}>
+            <img alt="sample_file" src={URL} />
+          </div>
+        ))}
+      </Carousel>
+    </div>
   );
-};
+}
 
 export default Intro;

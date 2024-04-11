@@ -1,44 +1,26 @@
 import React from "react";
 import "./skills.css";
-import Python from "../../assets/python.png";
-import WebDesign from "../../assets/htmlcssjs.png";
-import Reactjs from "../../assets/reactjs.png";
 
 const Skills = () => {
+  const handleButtonClick = (category) => {
+    // Implement logic to handle button click
+    console.log(`Clicked on ${category}`);
+  };
+
   return (
     <section id="skills">
-      <span className="skillTitle">What I do</span>
+      <span className="skillTitle">Our Products</span>
       <span className="skillDesc">
-        We believe that cryptocurrency and the use of blockchain can open up the
-        economy to individuals and groups that have been historically excluded
-        or ignored by the free market and financial institutions.
+        Explore our range of products designed to meet your needs and enhance
+        your experience in the digital world.
       </span>
-      <div className="skillBars">
-        <div className="skillBar">
-          <img src={Python} alt="Python" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Python</h2>
-            <p>I had learn python and make some project.</p>
-          </div>
-        </div>
-      </div>
-      <div className="skillBars">
-        <div className="skillBar">
-          <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Website Design</h2>
-            <p>I had made simple webpage through html,css,js.</p>
-          </div>
-        </div>
-      </div>
-      <div className="skillBars">
-        <div className="skillBar">
-          <img src={Reactjs} alt="Reactjs" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Reactjs</h2>
-            <p>I had prior knowledge based on reactjs.</p>
-          </div>
-        </div>
+      <div className="skillButtons">
+        <button onClick={() => handleButtonClick("Laptops")}>Grocery</button>
+        <button onClick={() => handleButtonClick("Mobiles")}>Mobiles</button>
+        <button onClick={() => handleButtonClick("Clothes")}>Fashion</button>
+        <button onClick={() => handleButtonClick("Clothes")}>Laptops</button>
+        <button onClick={() => handleButtonClick("Clothes")}>Electronics</button>
+        <button onClick={() => handleButtonClick("Clothes")}>Fashion</button>
       </div>
     </section>
   );

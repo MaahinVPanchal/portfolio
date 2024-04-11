@@ -1,54 +1,52 @@
-#works {
-  margin: 0 auto;
-  min-height: calc(100vh - 4rem);
-  width: 100vw;
-  max-width: 60rem;
-  display: flex;
-  flex-direction: column;
+/* work.css */
+
+#review {
+  width: 80%;
+  margin: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 1rem;
 }
 
-.worksTitle {
-  margin: 1rem 0;
-  font-size: 3rem;
+.slide {
+  display: flex;
+  height: 200px;
+}
+/* work.css */
+
+#box {
+  width: 80%;
+  margin: auto;
 }
 
-.worksDesc {
-  font-weight: 300;
-  font-size: 1rem;
-  max-width: 45rem;
-  padding-bottom: 4rem;
-}
-
-.worksImgs {
-  display: flexbox;
-  align-items: center;
+.slide {
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 70vw;
-  max-width: 80rem;
+  align-items: center;
+  height: 200px; /* Adjust the height as needed */
 }
 
-.worksImg {
-  object-fit: cover;
-  height: 10rem;
-  margin: 0.6rem;
+.text-container {
+  background-color: rgb(116, 119, 121);
+  color: black;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
 }
 
-.worksBtn {
-  padding: 0.5rem 2.5rem;
-  border: none;
-  background: white;
-  border-radius: 2rem;
-  font-size: 1rem;
-  margin: 3rem 0;
+.text-container h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: rgb(197, 129, 129);
 }
 
-@media screen and (max-width: 585px) {
-  .worksImg {
-    height: 50vw;
-  }
+.text-container p {
+  font-size: 16px;
+}
+
+
+.text-title {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1rem;
 }

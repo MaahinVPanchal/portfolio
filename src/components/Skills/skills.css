@@ -23,33 +23,29 @@
   max-width: 52rem;
   padding: 0 2rem;
 }
+/* skills.css */
 
-.skillBars {
-  margin: 1.5rem;
-  width: 100vw;
-  max-width: 80%;
-  text-align: left;
-}
-
-.skillBar {
+.skillButtons {
   display: flex;
-  margin: 1rem;
-  padding: 1.5rem 2rem;
-  border-radius: 0.5rem;
-  background: rgb(50, 50, 50);
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.skillBarImg {
-  object-fit: cover;
-  height: 3rem;
-  width: 3rem;
-  margin-right: 2rem;
+.skillButtons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.skillBarText > p {
-  font-size: 0.95rem;
-  font-weight: 200;
+.skillButtons button:hover {
+  background-color: #0056b3;
 }
+
 
 @media screen and (max-width: 720px) {
   .skillBarText > p {
