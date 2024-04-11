@@ -1,67 +1,82 @@
 #skills {
-  overflow: hidden;
-  width: 100vw;
-  max-width: 70rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 20px;
 }
 
 .skillTitle {
-  font-size: 3rem;
-  font-weight: 600;
-  padding-top: 3rem;
-  margin-bottom: 1.5rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .skillDesc {
-  font-weight: 300;
-  font-size: 1rem;
-  max-width: 52rem;
-  padding: 0 2rem;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
 }
-/* skills.css */
 
 .skillButtons {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .skillButtons button {
   padding: 10px 20px;
-  margin: 0 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
   font-size: 16px;
   cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
 }
 
 .skillButtons button:hover {
   background-color: #0056b3;
 }
 
-
-@media screen and (max-width: 720px) {
-  .skillBarText > p {
-    font-size: 2vw;
-  }
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-@media screen and (max-width: 330px) {
-  .skillBarText > p {
-    font-size: 3vw;
-  }
-  .skillBarImg {
-    height: 2.25rem;
-    width: 2.25rem;
-  }
-  .skillBarText {
-    font-size: 5vw;
-  }
+.productItem {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.productItem img {
+  max-width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.productItem h3 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.productItem p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+.ecommerceInfo {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ecommerceInfo p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.ecommerceInfo img {
+  max-width: 25px;
+  height: 20px;
 }
