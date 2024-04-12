@@ -13,12 +13,12 @@
   font-weight: 600;
   padding-top: 3rem;
   margin-bottom: 1rem;
-  color: #f3f1f1;
+  color: #b8b8b8;
 }
 
 .skillDesc {
   font-size: 1rem;
-  color: #f3f0f0;
+  color: #cac8c8;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -34,8 +34,8 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #dcf163;
-  color: #1e1c1c;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -69,25 +69,24 @@
   height: 150px;
   border-radius: 5px;
   object-fit: cover;
-  background-color: white;
 }
 
 .productItem h3 {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #969595;
+  color: #d4d2d2;
 }
 
 .productItem p {
   font-size: 12px;
   margin: 5px 0;
-  color: #dddbdb;
+  color: #f4f4f4;
 }
 
 .ecommerceInfo {
   margin-top: 10px;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   display: flex;
@@ -98,11 +97,27 @@
 .ecommerceInfo p {
   margin: 0;
   font-weight: bold;
-  color: #cdcaca;
+  color: #f0eded;
 }
 
 .ecommerceInfo img {
   max-width: 25px;
   height: 20px;
   margin-left: 5px;
+}
+
+/* skills.css */
+
+.addToCartButton {
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.addToCartButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
