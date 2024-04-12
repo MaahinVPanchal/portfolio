@@ -7,6 +7,9 @@ const images = [
   require("../../assets/hero_image3.png"),
   "https://images-eu.ssl-images-amazon.com/images/G/31/img22/march/brands/GW/Under_1499_Tallhero_3000x1200._CB561212093_.jpg",
   "https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg",
+  "https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/GATEWAY/April/CML/CML-GW_HERO_pc_2x._CB561612246_.jpg",
+  "https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/ATFGW/GW_Storage-box_3000x1200_PC._CB561623684_.jpg",
+  "https://images-eu.ssl-images-amazon.com/images/G/31/IMG24/Smart_Watches/3000X1200_New_Launch_March_hero1._CB580055456_.jpg",
 ];
 
 function Intro() {
